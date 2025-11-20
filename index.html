@@ -1,0 +1,364 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<!doctype html>
+<html lang="es">      
+<head>      
+
+<!-- Meta tags para SEO -->
+<meta name="description" content="Tarjeta especial para Julián Potes - Feliz Día del Hombre con diseño vintage y animaciones">
+<meta name="keywords" content="feliz día, hombre, tarjeta, vintage, Julián Potes, amor, regalo digital">
+<meta name="author" content="Esthela Alomia">
+
+<!-- Open Graph para redes sociales -->
+<meta property="og:title" content="Feliz Día Julián Potes">
+<meta property="og:description" content="Una tarjeta especial con mucho cariño">
+<meta property="og:image" content="https://tusitio.com/photo.jpg">
+<meta property="og:url" content="https://tusitio.com">
+<meta property="og:type" content="website">
+<meta charset="utf-8" />      
+<meta name="viewport" content="width=device-width,initial-scale=1" />      
+<title>Feliz día -- estilo vintage</title>  
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  
+
+<style>      
+  :root{      
+    --bg-1: #efe6df; /* carta envejecida */      
+    --stripe: rgba(45,28,20,0.06);      
+    --coffee: #3a2418;      
+    --dark: #0c0806;      
+    --accent: #b88966; /* color café claro para detalles */      
+    --ribbon: #2f1f18;      
+  }    /* Reset */  
+*{box-sizing:border-box;margin:0;padding:0}  
+html,body{height:100%}  
+body{  
+font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;  
+background: linear-gradient(180deg,var(--bg-1),#efeadf);  
+color:var(--coffee);  
+-webkit-font-smoothing:antialiased;  
+-moz-osx-font-smoothing:grayscale;  
+padding:24px;  
+display:flex;  
+align-items:flex-start;  
+justify-content:center;  
+}  /* Card */
+.card{
+width:100%;
+max-width:420px;
+background: repeating-linear-gradient(90deg, transparent 0 36px, var(--stripe) 36px 38px);
+border-radius:14px;
+box-shadow: 0 10px 30px rgba(12,8,6,0.12);
+overflow:hidden;
+border:1px solid rgba(0,0,0,0.06);
+position:relative;
+padding-bottom:32px;
+animation: floatIn 700ms ease-out both;
+}
+
+@keyframes floatIn{
+from{transform:translateY(24px) scale(.995);opacity:0}
+to{transform:translateY(0) scale(1);opacity:1}
+}
+
+/* Header text */
+.header{
+padding:28px 22px 8px;
+text-align:center;
+font-family: "Playfair Display", serif;
+color:var(--dark);
+}
+.date{font-size:12px; letter-spacing:1px; color:rgba(12,8,6,0.45); margin-bottom:6px}
+.title{font-size:34px; line-height:0.9; font-weight:700; margin-bottom:6px; color:var(--coffee)}
+.subtitle{font-style:italic; color:rgba(12,8,6,0.6); font-size:15px;}
+
+/* Photo polaroid */
+.polaroid{
+width:200px;
+margin:18px auto 6px;
+background:linear-gradient(180deg,#fff,#f7f5f2);
+padding:12px 12px 18px;
+border-radius:6px;
+box-shadow: 0 8px 18px rgba(10,6,4,0.12);
+border:1px solid rgba(0,0,0,0.06);
+transform-origin:center;
+animation: swing 1600ms ease-in-out infinite;
+}
+@keyframes swing{
+0%{transform:rotate(-1.5deg)}
+50%{transform:rotate(1.5deg)}
+100%{transform:rotate(-1.5deg)}
+}
+.photo{
+width:176px;
+height:176px;
+border-radius:4px;
+background: #ddd center/cover no-repeat;
+display:block;
+margin:0 auto 8px;
+border:6px solid #fff;
+box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+background-image: url('photo.jpg'); /* reemplaza por tu imagen */
+background-size:cover;
+background-position:center;
+}
+.name{
+text-align:center;
+font-family:"Playfair Display", serif;
+font-weight:700;
+font-size:22px;
+color:var(--dark);
+letter-spacing:0.5px;
+}
+
+/* Message paragraph */
+.message{
+margin:14px 22px;
+text-align:center;
+color:var(--coffee);
+font-size:15px;
+line-height:1.45;
+font-style:italic;
+}
+
+/* Ribbon graphic */
+.ribbon-wrap{
+display:flex;
+justify-content:center;
+margin-top:8px;
+}
+.ribbon{
+width:86%;
+height:56px;
+background:linear-gradient(90deg,var(--ribbon), #1f1713);
+border-radius:8px;
+position:relative;
+box-shadow: 0 8px 20px rgba(10,6,4,0.18);
+transform: translateY(18px);
+overflow:visible;
+display:flex;
+align-items:center;
+justify-content:center;
+animation: dropRibbon 700ms cubic-bezier(.2,.9,.3,1) both;
+}
+@keyframes dropRibbon{
+from{transform:translateY(-40px) scale(.98); opacity:0}
+to{transform:translateY(18px) scale(1); opacity:1}
+}
+.bow{
+width:120px;
+height:56px;
+background: linear-gradient(180deg,#2a1f1b,#1a1310);
+border-radius:8px;
+transform:translateY(-28px);
+box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--accent);
+font-family: "Playfair Display", serif;
+font-size:18px;
+}
+
+/* Heart area */
+.heart-container{
+width:110px;
+height:110px;
+margin:14px auto;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+animation: scaleUp 700ms ease-out both;
+}
+@keyframes scaleUp{
+from{transform:scale(.6) translateY(8px); opacity:0}
+to{transform:scale(1) translateY(0); opacity:1}
+}
+
+.heart-container svg{width:100%; height:100%}
+
+/* CTA */
+.cta{
+display:flex;
+justify-content:center;
+margin:14px;
+}
+.btn{
+background:linear-gradient(180deg,var(--accent), #a16944);
+color: #fff;
+padding:10px 18px;
+border-radius:28px;
+font-weight:700;
+border:none;
+cursor:pointer;
+box-shadow: 0 8px 18px rgba(58,36,24,0.18);
+transform:translateY(0);
+transition:transform .18s ease, box-shadow .18s ease;
+display:inline-flex;
+gap:8px;
+align-items:center;
+}
+.btn:active{transform:translateY(2px)}
+.btn:hover{box-shadow: 0 12px 28px rgba(58,36,24,0.24)}
+
+.heart{
+width:22px; height:22px; display:inline-block;
+background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23fff" d="M12 21s-7.5-4.9-9.2-7.1C-1 8.9 3.2 4 7.8 6.1 9.6 7 10.6 8.6 12 10c1.4-1.4 2.4-3 4.2-3.9 4.6-2.1 8.8 2.8 4.9 7.8C19.5 16.1 12 21 12 21z"/></svg>') center/contain no-repeat;
+}
+
+/* Footer signature */
+.signature{
+margin-top:14px;
+text-align:center;
+color:var(--dark);
+font-size:14px;
+font-family:"Playfair Display", serif;
+letter-spacing:0.2px;
+}
+
+/* small screen tweaks */
+@media (max-width:420px){
+.card{padding-bottom:36px}
+.title{font-size:30px}
+.polaroid{width:172px}
+.photo{width:150px;height:150px}
+}
+
+/* Confetti pieces (created with JS) */
+.confetti-piece{
+position:fixed;
+pointer-events:none;
+width:8px;height:12px;
+opacity:0.95;
+transform-origin:center;
+z-index:60;
+border-radius:2px;
+}
+
+/* Modal (letter) */
+.modal{
+position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+background:rgba(0,0,0,0.45); z-index:80; opacity:0; pointer-events:none; transition:opacity .18s ease;
+}
+.modal.show{opacity:1; pointer-events:auto}
+.modal-card{
+width:92%;
+max-width:460px;
+background: #fff;
+padding:18px;
+border-radius:10px;
+box-shadow:0 18px 40px rgba(0,0,0,0.32);
+text-align:left;
+}
+.modal-card h3{font-family:"Playfair Display",serif; margin-bottom:6px; color:var(--coffee)}
+.modal-close{float:right;border:none;background:none;font-size:18px;cursor:pointer;color:var(--coffee)}
+.modal p{color:#333; line-height:1.5; margin-top:8px}
+
+/* small flourish under name */
+.under-name{
+width:56px; height:10px; margin:8px auto 0;
+background: linear-gradient(90deg, rgba(58,36,24,0.18), rgba(184,137,102,0.18));
+border-radius:60px;
+}
+
+</style>  
+</head>
+
+<body>  
+<main class="card" role="main" aria-label="Tarjeta vintage">      
+  <header class="header">      
+    <div class="date">19 DE NOVIEMBRE</div>      
+    <div class="title">Feliz Día al<br><span style="font-size:30px">HOMBRE</span><div style="font-size:16px;margin-top:6px">de mi vida</div></div>      
+    <div class="subtitle">Hola corazón de melón</div>      
+  </header>    
+  
+  <div class="polaroid" aria-hidden="false">      
+    <div class="photo" role="img" aria-label="Foto del homenajeado" style="background-image: url('Julián.jpg')"></div>      
+    <div class="name" id="personName">Julián Potes</div>      
+    <div class="under-name" aria-hidden="true"></div>      
+  </div>    
+    
+  <p class="message">Vengo a recordarte que eres el mejor hombre en mi vida, que te amo mucho y que estoy orgullosa de ti por que cada día te esfuerzas más.</p>  
+  <p class="message">Espero que lo leas cariño, que todos los días siempre llegues y te haga sonreír o sentirte mejor a pesar de los malos días.</p>
+  
+  <div class="heart-container" title="corazón">      
+    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">      
+      <defs>      
+        <linearGradient id="heartGradient" x1="0" x2="1" y1="0" y2="1">      
+          <stop offset="0" stop-color="#ff6b6b"/><stop offset="1" stop-color="#c44569"/>      
+        </linearGradient>      
+      </defs>      
+      <path d="M60,30 
+               C50,10 30,15 30,40 
+               C30,65 60,85 60,85 
+               C60,85 90,65 90,40 
+               C90,15 70,10 60,30Z" 
+            fill="url(#heartGradient)" 
+            stroke="#c44569" 
+            stroke-width="2"/>      
+    </svg>      
+  </div>    
+    
+  <div class="cta">      
+    <button class="btn" id="openLetter" aria-haspopup="dialog">      
+      <span class="heart" aria-hidden="true"></span>      
+      Haz clic aquí      
+    </button>      
+  </div>    
+    
+  <center>
+      <p>Con mucho cariño</p>
+      </center>      
+    </div>      
+  </div>    
+    
+  <div class="signature">De: <span style="font-style:italic">Esthela Alomia</span></div>  
+</main>  
+
+<!-- Modal letter -->  
+<div class="modal" id="modal">      
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">      
+    <button class="modal-close" id="closeModal" aria-label="Cerrar">✕</button>      
+    <h3 id="modalTitle">Carta para Julián</h3>      
+    <p>Hoy quiero celebrar al hombre que hace mis días más bonitos. A ti, que con tu forma de ser me enseñas lo fuerte, noble y trabajador que eres. Me encanta cómo luchas por tus sueños y cómo me haces reír incluso en la distancia.</p>      
+    <p style="margin-top:10px; font-weight:700; color:var(--coffee)">•Con cariño, Esthela</p>      
+  </div>      
+</div>  
+
+<script>      
+  const openBtn = document.getElementById('openLetter');      
+  const modal = document.getElementById('modal');      
+  const closeBtn = document.getElementById('closeModal');    
+
+  openBtn.addEventListener('click', ()=> {  
+    modal.classList.add('show');  
+    launchConfetti();  
+  });  
+  closeBtn.addEventListener('click', ()=> modal.classList.remove('show'));  
+  modal.addEventListener('click', (e)=> { if(e.target === modal) modal.classList.remove('show') });  
+
+  function launchConfetti(){
+    const colors = ['#b88966','#6b4a34','#d5b08a','#3a2418','#e9d7c4'];
+    const count = 24;
+    for(let i=0;i<count;i++){
+      const el = document.createElement('div');
+      el.className = 'confetti-piece';
+      el.style.background = colors[Math.floor(Math.random()*colors.length)];
+      el.style.left = (30 + Math.random()*60) + '%';
+      el.style.top = (10 + Math.random()*10) + '%';
+      el.style.transform = 'rotate('+ (Math.random()*360) +'deg)';
+      document.body.appendChild(el);
+
+      const duration = 2000 + Math.random()*1600;
+      const finalX = (Math.random()*200 - 100);
+      const finalY = 600 + Math.random()*200;
+      el.animate([
+        { transform: el.style.transform + ' translateY(0px) rotate(0deg)', opacity:1 },
+        { transform: el.style.transform + ' translateY('+finalY+'px) translateX('+finalX+'px) rotate('+ (360 + Math.random()*720) +'deg)', opacity:0.9 }
+      ], { duration: duration, easing: 'cubic-bezier(.2,.8,.3,1)'});
+
+      setTimeout(()=> el.remove(), duration+80);
+    }
+  }
+</script>  
+</body>
+</html>
